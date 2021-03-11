@@ -20,25 +20,33 @@ def connectIndexingServer():
     register_json = json.dumps(register_data)
     conn.send(register_json.encode(FORMAT))
 
-    while True:
-        data = conn.recv(SIZE).decode(FORMAT)
-        json_data = json.loads(data)
+    isvalid = True
 
-        if json_data["type"] == "INIT":
-            print(json_data["msg"])
-        
-        elif json_data["type"] == "QUERY-RES":
-            print(json_data["msg"])
+    while True:
+        if isvalid:
+            data = conn.recv(SIZE).decode(FORMAT)
+            json_data = json.loads(data)
+
+            if json_data["type"] == "INIT":
+                print(json_data["msg"])
+            
+            elif json_data["type"] == "QUERY-RES":
+                for seed in json_data["msg"]:
+                    print(seed)
 
         user_input = input("> ")
         user_input = user_input.split(" ")
         action = user_input[0]
+        isvalid = True
 
-        if action == "QUERY":
+        if action == "QUERY" and len(user_input) > 1:
             conn.send(json.dumps({"action": "QUERY", "file": user_input[1]}).encode(FORMAT))
         elif action == "LOGOUT":
             conn.send(json.dumps({"action": "LOGOUT"}).encode(FORMAT))
             break
+        else:
+            print("Input action is invalid!")
+            isvalid = False
 
     print("Disconnected from the server.")
     conn.close()
