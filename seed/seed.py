@@ -2,10 +2,8 @@ import os
 import socket
 import threading
 import json
+import click
 
-IP = socket.gethostbyname(socket.gethostname())
-PORT = 5000
-ADDR = (IP, PORT)
 FORMAT = "utf-8"
 SIZE = 1024
 
@@ -25,22 +23,22 @@ def downloadHandler(conn, addr):
         l = f.read(SIZE)
     conn.close()
 
-def seedServer():
+def seedServer(seed_server_addr):
     print("[STARTING] Seed Server is starting")
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind((IP, 50004))
+    server.bind(seed_server_addr)
     server.listen()
-    print(f"[LISTENING] Seed Server is listening on {IP}:{50001}.")
+    print(f"[LISTENING] Seed Server is listening on {seed_server_addr[0]}:{str(seed_server_addr[1])}.")
 
     while True:
         conn, addr = server.accept()
         thread = threading.Thread(target=downloadHandler, args=(conn, addr))
         thread.start()
 
-def connectIndexingServer():
+def connectIndexingServer(client_bind_addr, server_addr):
     conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    conn.bind((IP, 50003))
-    conn.connect(ADDR)
+    conn.bind(client_bind_addr)
+    conn.connect(server_addr)
 
     files = os.listdir("./")
     register_data = {
@@ -103,7 +101,27 @@ def connectIndexingServer():
     print("Disconnected from the server.")
     conn.close()
 
-if __name__ == "__main__":
-    thread = threading.Thread(target=seedServer)
+@click.command()
+@click.argument('port')
+@click.option('--dir',
+              default="./",
+              help='Serving directory relative to current directory')
+@click.option('--server',
+              default="127.0.0.1:5000",
+              help='Indexing server address')
+def main(port, dir, server):
+    target_dir = os.path.join(os.path.dirname(__file__), dir)
+    os.chdir(target_dir)
+
+    port = int(port)
+    localhost = socket.gethostbyname(socket.gethostname())
+    seed_server_addr = (localhost, port + 1)
+    client_bind_addr = (localhost, port)
+    server_addr = server.split(":")
+    server_addr = (server_addr[0], int(server_addr[1]))
+    thread = threading.Thread(target=seedServer, args=(seed_server_addr,))
     thread.start()
-    connectIndexingServer()
+    connectIndexingServer(client_bind_addr, server_addr)
+
+if __name__ == "__main__":
+    main()
