@@ -11,11 +11,11 @@ SIZE = 1024
 FORMAT = "utf-8"
 SERVER_DATA_PATH = "./"
 
-seed_table = {}
+peer_table = {}
 cond = threading.Condition()
 
 def clientHandler(conn, addr):
-    global seed_table
+    global peer_table
     global cond
     full_addr = addr[0] + ":" + str(addr[1])
 
@@ -26,21 +26,21 @@ def clientHandler(conn, addr):
         data = conn.recv(SIZE).decode(FORMAT)
 
         if not data:
-            # delete record in seed_table when disconnect
+            # delete record in peer_table when data = None, client has disconnected
             print(f"[UNREGISTER] {full_addr} unrigistered")
             cond.acquire()
-            del seed_table[full_addr]
+            del peer_table[full_addr]
             cond.release()
             break
 
         json_data = json.loads(data)
 
         if json_data["action"] == "REGISTER":
-            # register file list from seeds
+            # register file list from peers
             print(f"[REGISTER] {full_addr} registerd")
             cond.acquire()
-            seed_table[full_addr] = json_data["filelist"]
-            # print(seed_table)
+            peer_table[full_addr] = json_data["filelist"]
+            # print(peer_table)
             cond.release()
         
         elif json_data["action"] == "QUERY":
@@ -49,9 +49,9 @@ def clientHandler(conn, addr):
             print(f"[QUERY] {full_addr} query {query_file}")
             res = []
             cond.acquire()
-            for seed, filelist in seed_table.items():
-                if seed != full_addr and query_file in filelist:
-                    res.append(seed)
+            for peer, filelist in peer_table.items():
+                if peer != full_addr and query_file in filelist:
+                    res.append(peer)
             cond.release()
             conn.send(json.dumps({"type": "QUERY-RES", "msg": res, "file": query_file}).encode(FORMAT))
 
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     try:
         startIndexingServer()
     except KeyboardInterrupt:
-        print("\n[SHUTDOWN] Indexing Server is down")
+        print("\n[SHUTDOWN] Indexing server is down")
         try:
             sys.exit(0)
         except SystemExit:
