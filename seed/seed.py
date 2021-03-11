@@ -8,6 +8,22 @@ import click
 FORMAT = "utf-8"
 SIZE = 1024
 
+def downloadFile(addr, filename):
+    # Download file from other peer
+    downloader = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    downloader.connect(addr)
+
+    downloader.send(json.dumps({"file": filename}).encode(FORMAT))
+
+    l = downloader.recv(1024)
+
+    f = open(filename,'wb') #open in binary
+    while (l):
+            f.write(l)
+            l = downloader.recv(1024)
+    f.close()
+    downloader.close()
+
 def uploadHandler(conn, addr):
     full_addr = addr[0] + ":" + str(addr[1])
 
@@ -69,19 +85,7 @@ def connectIndexingServer(client_bind_addr, server_addr):
                     user_input = user_input.split(":")
                     download_addr = (user_input[0], int(user_input[1])+1)
                     
-                    downloader = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                    downloader.connect(download_addr)
-
-                    downloader.send(json.dumps({"file": query_file}).encode(FORMAT))
-
-                    l = downloader.recv(1024)
-
-                    f = open(query_file,'wb') #open in binary
-                    while (l):
-                            f.write(l)
-                            l = downloader.recv(1024)
-                    f.close()
-                    downloader.close()
+                    downloadFile(download_addr, query_file)
                 else:
                     print("No peers found for the file.")
 
