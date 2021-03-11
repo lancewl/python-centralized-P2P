@@ -54,14 +54,6 @@ def clientHandler(conn, addr):
                     res.append(seed)
             cond.release()
             conn.send(json.dumps({"type": "QUERY-RES", "msg": res, "file": query_file}).encode(FORMAT))
-        
-        elif json_data["action"] == "LOGOUT":
-            # delete record in seed_table when disconnect
-            print(f"[UNREGISTER] {full_addr} unrigistered")
-            cond.acquire()
-            del seed_table[full_addr]
-            cond.release()
-            break
 
     conn.close()
 

@@ -92,9 +92,6 @@ def connectIndexingServer(client_bind_addr, server_addr):
 
         if action == "QUERY" and len(user_input) > 1:
             conn.send(json.dumps({"action": "QUERY", "file": user_input[1]}).encode(FORMAT))
-        elif action == "LOGOUT":
-            conn.send(json.dumps({"action": "LOGOUT"}).encode(FORMAT))
-            break
         else:
             print("Input action is invalid!")
             isvalid = False
