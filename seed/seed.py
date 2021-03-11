@@ -1,4 +1,5 @@
 import os
+import sys
 import socket
 import threading
 import json
@@ -14,7 +15,7 @@ def downloadHandler(conn, addr):
     json_data = json.loads(data)
     filename = json_data["file"]
 
-    print(f"[UPLOADING] {full_addr} is downloading {filename}.")
+    print(f"[UPLOADING] {full_addr} is downloading {filename}")
 
     f = open (filename, "rb")
     l = f.read(SIZE)
@@ -28,7 +29,7 @@ def seedServer(seed_server_addr):
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind(seed_server_addr)
     server.listen()
-    print(f"[LISTENING] Seed Server is listening on {seed_server_addr[0]}:{str(seed_server_addr[1])}.")
+    print(f"[LISTENING] Seed Server is listening on {seed_server_addr[0]}:{str(seed_server_addr[1])}")
 
     while True:
         conn, addr = server.accept()
@@ -55,7 +56,7 @@ def connectIndexingServer(client_bind_addr, server_addr):
             data = conn.recv(SIZE).decode(FORMAT)
             json_data = json.loads(data)
 
-            if json_data["type"] == "INIT":
+            if json_data["type"] == "OK":
                 print(json_data["msg"])
             
             elif json_data["type"] == "QUERY-RES":
@@ -120,8 +121,15 @@ def main(port, dir, server):
     server_addr = server.split(":")
     server_addr = (server_addr[0], int(server_addr[1]))
     thread = threading.Thread(target=seedServer, args=(seed_server_addr,))
+    thread.daemon = True
     thread.start()
     connectIndexingServer(client_bind_addr, server_addr)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
