@@ -31,8 +31,14 @@ def connectIndexingServer():
                 print(json_data["msg"])
             
             elif json_data["type"] == "QUERY-RES":
-                for seed in json_data["msg"]:
-                    print(seed)
+                if len(json_data["msg"]) > 0:
+                    for seed in json_data["msg"]:
+                        print(seed)
+                    print("Choose a seed to download:")
+                    user_input = input("> ")
+                    # TODO: Download from other seed
+                else:
+                    print("No seeds found for the file.")
 
         user_input = input("> ")
         user_input = user_input.split(" ")
