@@ -4,7 +4,7 @@ import threading
 import json
 
 IP = socket.gethostbyname(socket.gethostname())
-PORT = 4456
+PORT = 5000
 ADDR = (IP, PORT)
 SIZE = 1024
 FORMAT = "utf-8"
@@ -13,7 +13,7 @@ SERVER_DATA_PATH = "./"
 seed_table = {}
 cond = threading.Condition()
 
-def client_handler(conn, addr):
+def clientHandler(conn, addr):
     global seed_table
     global cond
     full_addr = addr[0] + ":" + str(addr[1])
@@ -43,7 +43,7 @@ def client_handler(conn, addr):
                 if seed != full_addr and query_file in filelist:
                     res.append(seed)
             cond.release()
-            conn.send(json.dumps({"type": "QUERY-RES", "msg": res}).encode(FORMAT))
+            conn.send(json.dumps({"type": "QUERY-RES", "msg": res, "file": query_file}).encode(FORMAT))
         
         elif json_data["action"] == "LOGOUT":
             # delete record in seed_table when disconnect
@@ -56,15 +56,15 @@ def client_handler(conn, addr):
     conn.close()
 
 def startIndexingServer():
-    print("[STARTING] Server is starting")
+    print("[STARTING] Indexing Server is starting")
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind(ADDR)
     server.listen()
-    print(f"[LISTENING] Server is listening on {IP}:{PORT}.")
+    print(f"[LISTENING] Indexing Server is listening on {IP}:{PORT}.")
 
     while True:
         conn, addr = server.accept()
-        thread = threading.Thread(target=client_handler, args=(conn, addr))
+        thread = threading.Thread(target=clientHandler, args=(conn, addr))
         thread.start()
         print(f"[ACTIVE CONNECTIONS] {threading.activeCount() - 1}")
 
