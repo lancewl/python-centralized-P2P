@@ -1,4 +1,5 @@
 import os
+import sys
 import socket
 import threading
 import json
@@ -19,10 +20,19 @@ def clientHandler(conn, addr):
     full_addr = addr[0] + ":" + str(addr[1])
 
     print(f"[NEW CONNECTION] {addr} connected.")
-    conn.send(json.dumps({"type": "INIT", "msg": "Welcome to indexing server!"}).encode(FORMAT))
+    conn.send(json.dumps({"type": "OK", "msg": "Welcome to indexing server!"}).encode(FORMAT))
 
     while True:
         data = conn.recv(SIZE).decode(FORMAT)
+
+        if not data:
+            # delete record in seed_table when disconnect
+            print(f"[UNREGISTER] {full_addr} unrigistered")
+            cond.acquire()
+            del seed_table[full_addr]
+            cond.release()
+            break
+
         json_data = json.loads(data)
 
         if json_data["action"] == "REGISTER":
@@ -60,13 +70,21 @@ def startIndexingServer():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind(ADDR)
     server.listen()
-    print(f"[LISTENING] Indexing Server is listening on {IP}:{PORT}.")
+    print(f"[LISTENING] Indexing Server is listening on {IP}:{PORT}")
 
     while True:
         conn, addr = server.accept()
         thread = threading.Thread(target=clientHandler, args=(conn, addr))
+        thread.daemon = True
         thread.start()
         print(f"[ACTIVE CONNECTIONS] {threading.activeCount() - 1}")
 
 if __name__ == "__main__":
-    startIndexingServer()
+    try:
+        startIndexingServer()
+    except KeyboardInterrupt:
+        print("\n[SHUTDOWN] Indexing Server is down")
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
