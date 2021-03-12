@@ -3,10 +3,8 @@ import sys
 import socket
 import threading
 import json
+import click
 
-IP = socket.gethostbyname(socket.gethostname())
-PORT = 5000
-ADDR = (IP, PORT)
 SIZE = 1024
 FORMAT = "utf-8"
 SERVER_DATA_PATH = "./"
@@ -65,12 +63,20 @@ def clientHandler(conn, addr):
 
     conn.close()
 
-def startIndexingServer():
+@click.command()
+@click.option('--port',
+              default="5000",
+              help='Hosting port')
+def startIndexingServer(port):
     print("[STARTING] Indexing Server is starting")
+    port = int(port)
+    localhost = socket.gethostbyname(socket.gethostname())
+    hosting_addr = (localhost, port)
+
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind(ADDR)
+    server.bind(hosting_addr)
     server.listen()
-    print(f"[LISTENING] Indexing Server is listening on {IP}:{PORT}")
+    print(f"[LISTENING] Indexing Server is listening on {localhost}:{port}")
 
     while True:
         conn, addr = server.accept()
