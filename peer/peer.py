@@ -185,7 +185,7 @@ def connectIndexingServer(client_bind_addr, server_addr):
               default="127.0.0.1:5000",
               help='Indexing server address')
 def main(port, dir, server):
-    target_dir = os.path.join(os.path.dirname(__file__), dir)
+    target_dir = os.path.join(os.getcwd(), dir)
     os.chdir(target_dir)
 
     port = int(port)
