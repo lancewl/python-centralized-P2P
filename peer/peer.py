@@ -118,6 +118,11 @@ def connectIndexingServer(client_bind_addr, server_addr):
     while True:
         if isvalid:
             data = conn.recv(SIZE).decode(FORMAT)
+            
+            if not data:
+                print("[ERROR] Disconnect from indexing server")
+                break
+
             json_data = json.loads(data)
 
             if json_data["type"] == "OK":
