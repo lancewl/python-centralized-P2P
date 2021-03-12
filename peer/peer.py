@@ -4,9 +4,39 @@ import socket
 import threading
 import json
 import click
+import time
+from watchdog.observers import Observer
+from watchdog.events import PatternMatchingEventHandler
 
 FORMAT = "utf-8"
 SIZE = 1024
+
+def watchFolder(conn):
+    patterns = "*"
+    ignore_patterns = ""
+    ignore_directories = False
+    case_sensitive = True
+    event_handler = PatternMatchingEventHandler(patterns, ignore_patterns, ignore_directories, case_sensitive)
+
+    def on_change(event):
+        files = os.listdir("./")
+        register_data = {
+            "action": "REGISTER",
+            "filelist": files
+        }
+        register_json = json.dumps(register_data)
+        conn.send(register_json.encode(FORMAT))
+
+
+    event_handler.on_created = on_change
+    event_handler.on_deleted = on_change
+
+    path = "."
+    go_recursively = True
+    folder_observer = Observer()
+    folder_observer.schedule(event_handler, path, recursive=go_recursively)
+
+    folder_observer.start()
 
 def downloadFile(addr, filename):
     # Download file from other peer
@@ -64,6 +94,10 @@ def connectIndexingServer(client_bind_addr, server_addr):
     }
     register_json = json.dumps(register_data)
     conn.send(register_json.encode(FORMAT))
+
+    thread = threading.Thread(target=watchFolder, args=(conn,))
+    thread.daemon = True
+    thread.start()
 
     isvalid = True
 
