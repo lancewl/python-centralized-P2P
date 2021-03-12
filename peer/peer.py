@@ -4,7 +4,6 @@ import socket
 import threading
 import json
 import click
-import time
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
@@ -114,15 +113,28 @@ def connectIndexingServer(client_bind_addr, server_addr):
             
             elif json_data["type"] == "QUERY-RES":
                 query_file = json_data["file"]
-                if len(json_data["msg"]) > 0:
-                    for peer in json_data["msg"]:
-                        print(peer)
-                    print("Choose a peer to download:")
-                    user_input = input("> ")
-                    user_input = user_input.split(":")
-                    download_addr = (user_input[0], int(user_input[1])+1)
-                    
-                    downloadFile(download_addr, query_file)
+                peer_list = json_data["msg"]
+                if len(peer_list) > 0:
+                    while True:
+                        for i, peer in enumerate(peer_list):
+                            print(str(i+1) + ") " + peer)
+                        print("0) exit")
+                        print("Choose a peer to download:")
+                        user_input = input("> ")
+
+                        if user_input[0].isnumeric():
+                            i = int(user_input[0])
+                            if i == 0:
+                                break
+                            elif i > 0 and i <= len(peer_list):
+                                peer_addr = peer_list[i-1].split(":")
+                                download_addr = (peer_addr[0], int(peer_addr[1])+1)
+                                downloadFile(download_addr, query_file)
+                                break
+                            else:
+                                print("Wrong index please try again")
+                        else:
+                            print("Invalid input please try again")
                 else:
                     print("No peers found for the file.")
 
