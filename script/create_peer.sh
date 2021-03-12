@@ -2,6 +2,7 @@
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]
   then
     echo "Usage: create_peer.sh [Peer Count] [File Count] [File Size]"
+    exit 0
 fi
 
 N=$1
