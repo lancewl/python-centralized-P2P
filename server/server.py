@@ -43,6 +43,14 @@ def clientHandler(conn, addr):
             # print(peer_table)
             cond.release()
         
+        elif json_data["action"] == "UPDATE":
+            # Update file list of peers
+            print(f"[UPDATE] {full_addr} file list updated")
+            cond.acquire()
+            peer_table[full_addr] = json_data["filelist"]
+            # print(peer_table)
+            cond.release()
+        
         elif json_data["action"] == "QUERY":
             # query for a file
             query_file = json_data["file"]
