@@ -1,0 +1,808 @@
+[STARTING] Peer Server is starting
+[LISTENING] Peer Server is listening on 127.0.0.1:50021
+Welcome to indexing server!
+> Start waiting
+[UPLOADING] 127.0.0.1:63649 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63648 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63650 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63651 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63652 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63653 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63654 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63655 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63656 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63657 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63661 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63662 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63663 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63666 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63667 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63670 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63671 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63675 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63676 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63677 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63680 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63681 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63685 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63686 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63689 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63690 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63692 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63695 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63696 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63699 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63700 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63703 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63705 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63706 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63710 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63711 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63713 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63715 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63717 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63720 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63721 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63724 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63725 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63728 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63730 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63731 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63734 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63736 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63738 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63739 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63742 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63745 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63746 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63747 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63750 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63752 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63753 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63756 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63757 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63758 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63760 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63763 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63765 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63767 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63769 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63771 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63773 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63775 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63777 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63779 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63780 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63781 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63784 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63786 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63788 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63791 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63792 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63795 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63796 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63798 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63799 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63803 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63804 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63806 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63808 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63809 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63812 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63815 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63816 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63819 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63820 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63822 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63824 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63826 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63829 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63830 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63833 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63834 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63836 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63838 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63840 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63842 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63843 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63846 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63849 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63850 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63853 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63854 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63856 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63858 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63859 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63861 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63864 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63866 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63868 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63869 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63872 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63873 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63876 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63877 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63879 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63883 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63884 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63885 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63888 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63889 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63891 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63893 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63895 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63896 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63899 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63901 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63903 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63906 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63907 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63910 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63911 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63913 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63915 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63917 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63920 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63921 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63924 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63925 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63927 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63929 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63932 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63933 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63936 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63938 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63941 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63943 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63945 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63947 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63950 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63951 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63953 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:63955 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63957 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63959 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63962 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63963 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63964 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63966 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63968 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63970 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63971 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63974 is downloading data1.txt
+> [UPLOADING] 127.0.0.1:63975 is downloading data1.txt
+1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63977 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63980 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63982 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63984 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63987 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63988 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63990 is downloading data1.txt
+[UPLOADING] 127.0.0.1:63992 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63994 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:63999 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64002 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64004 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [UPLOADING] 127.0.0.1:64007 is downloading data1.txt
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64009 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64012 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64014 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64016 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64018 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64020 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64022 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64024 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64026 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64027 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64029 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64032 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64033 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64035 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64038 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64040 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64041 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+[UPLOADING] 127.0.0.1:64043 is downloading data1.txt
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+> 1) 127.0.0.1:50040
+2) 127.0.0.1:50030
+3) 127.0.0.1:50010
+0) exit
+Choose a peer to download:
+> [DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 50031)
+> Start waiting
+> Input action is invalid!
+> 
+Aborted!
