@@ -3,6 +3,7 @@ import sys
 import socket
 import threading
 import json
+import time
 import click
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
@@ -162,6 +163,10 @@ def connectIndexingServer(client_bind_addr, server_addr):
 
         if action == "QUERY" and len(user_input) > 1:
             conn.send(json.dumps({"action": "QUERY", "file": user_input[1]}).encode(FORMAT))
+        elif action == "WAIT":
+            print("Start waiting")
+            time.sleep(1)
+            isvalid = False
         elif action == "EXIT":
             break
         else:
