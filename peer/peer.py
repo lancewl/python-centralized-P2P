@@ -12,6 +12,7 @@ FORMAT = "utf-8"
 SIZE = 1024
 
 def watchFolder(conn):
+    # Keep watching the folder for any change
     patterns = "*"
     ignore_patterns = ""
     ignore_directories = False
@@ -19,9 +20,10 @@ def watchFolder(conn):
     event_handler = PatternMatchingEventHandler(patterns, ignore_patterns, ignore_directories, case_sensitive)
 
     def on_change(event):
+        # Update the file list with the indexing server
         files = os.listdir("./")
         register_data = {
-            "action": "REGISTER",
+            "action": "UPDATE",
             "filelist": files
         }
         register_json = json.dumps(register_data)
@@ -40,6 +42,7 @@ def watchFolder(conn):
 
 def downloadFile(addr, filename):
     # Download file from other peer
+    print(f"[DOWNLOADING] Downloading {filename} from {addr}")
     downloader = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     downloader.connect(addr)
 
