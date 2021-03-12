@@ -87,7 +87,19 @@ def peerServer(peer_server_addr):
 def connectIndexingServer(client_bind_addr, server_addr):
     conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     conn.bind(client_bind_addr)
-    conn.connect(server_addr)
+    try:
+        conn.connect(server_addr)
+    except:
+        print("[ERROR] Cannot connect to indexing server")
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
+
+    peer_server_addr = (client_bind_addr[0], client_bind_addr[1] + 1)
+    thread = threading.Thread(target=peerServer, args=(peer_server_addr,))
+    thread.daemon = True
+    thread.start()
 
     files = os.listdir("./")
     register_data = {
@@ -168,13 +180,9 @@ def main(port, dir, server):
 
     port = int(port)
     localhost = socket.gethostbyname(socket.gethostname())
-    peer_server_addr = (localhost, port + 1)
     client_bind_addr = (localhost, port)
     server_addr = server.split(":")
     server_addr = (server_addr[0], int(server_addr[1]))
-    thread = threading.Thread(target=peerServer, args=(peer_server_addr,))
-    thread.daemon = True
-    thread.start()
     connectIndexingServer(client_bind_addr, server_addr)
 
 if __name__ == "__main__":
