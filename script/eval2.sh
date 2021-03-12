@@ -1,12 +1,22 @@
 #!/bin/bash
+if [ -z "$1" ]
+  then
+    echo "Usage: ./eval.sh [Peer Count]"
+    exit 0
+fi
+
 set -m
+
+# How many peers
+N=$1
+OUT="../out/eval2/N$N/"
+mkdir -p ${OUT}
+rm ${OUT}*
+./create_peer.sh $N 5 128
 
 SERVER='python ../server/server.py'
 PEER='python ../peer/peer.py'
-# How many peers
-N=2
-OUT="../out/eval2/N$N/"
-rm ${OUT}*
+
 
 # QUERY 100 times
 ACT='WAIT\n'
@@ -31,4 +41,5 @@ for pid in ${pids[*]}; do
 done
 
 echo "All peer is done!"
+rm -rf peer_folder*
 kill -SIGINT %1

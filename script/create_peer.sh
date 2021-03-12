@@ -1,15 +1,13 @@
 #!/bin/bash
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]
   then
-    echo "Usage: create_peer.sh [Peer Count] [File Count] [File Size]"
+    echo "Usage: ./create_peer.sh [Peer Count] [File Count] [File Size]"
     exit 0
 fi
 
 N=$1
 F=$2
 S=$3
-
-rm -rf peer_folder*
 
 for (( i=1; i<=$N; i++ ))
 do
